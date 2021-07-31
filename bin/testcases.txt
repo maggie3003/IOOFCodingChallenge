@@ -1,0 +1,84 @@
+CASE 1:
+Check results on getting rid of invalid commands
+INPUT:
+test
+another test case
+wow
+PLACE 1,1,NORTH
+test again
+MOVE
+test
+LEFT
+REPORT
+
+OUTPUT:
+1,2,WEST
+
+RESULT:
+PASS
+
+CASE 2:
+Check results on reporting more than one robot and making sure no robot fall off the table
+INPUT:
+test
+another test case
+wow
+PLACE 1,1,NORTH
+test again
+MOVE
+test
+LEFT
+PLACE 2,2,WEST
+MOVE
+MOVE
+MOVE
+REPORT
+
+OUTPUT:
+1,2,WEST
+0,2,WEST
+
+RESULT:
+PASS
+
+CASE 3:
+Check reults on printing error message when there is no valid commands 
+INPUT:
+test
+lalalalalalalalalal
+lol
+123
+what?
+
+OUTPUT:
+(null)
+
+console: no valid commands
+
+RESULT:
+PASS
+
+
+CASE 4:
+Check results on reporting robot can rotate correctly
+INPUT:
+PLACE 4,8,EAST
+MOVE
+this
+PLACE 1,2,EAST
+LEFT
+RIGHT
+MOVE
+LEFT
+MOVE
+RIGHT
+MOVE
+MOVE
+REPORT
+
+OUTPUT: 
+4,3,EAST
+
+RESULT:
+PASS
+
