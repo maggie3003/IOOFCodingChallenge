@@ -1,6 +1,8 @@
 This app is written based on the following assumptions:
 1. if there are more than one robot placed on table, MOVE and ROTATE commands are meant to move the lastest one;
 
+This app is using Java version 11. (Some IDE might ask you to set up JDK).
+
 
 
 
